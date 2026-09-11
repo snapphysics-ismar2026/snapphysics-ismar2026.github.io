@@ -41,7 +41,15 @@ body{
 }
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .narrow{max-width:860px;margin:0 auto}
-#abstract .wrap.narrow{max-width:1110px}
+#abstract .wrap.narrow{
+  max-width:1110px;
+  container-type:inline-size;   /* ← 이 박스를 "컨테이너"로 선언 */
+}
+.absline{
+  white-space:nowrap;
+  letter-spacing:-.015em;
+  font-size:clamp(10px, 1.46cqw, 16.2px);  /* vw → cqw로 교체 */
+}
   
 /* ---------- Hero ---------- */
 header{
