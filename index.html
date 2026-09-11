@@ -43,12 +43,14 @@ body{
 .narrow{max-width:860px;margin:0 auto}
 #abstract .wrap.narrow{
   max-width:1110px;
-  container-type:inline-size;   /* ← 이 박스를 "컨테이너"로 선언 */
+  container-type:inline-size;
 }
 .absline{
+  display:block;           
+  text-align:center;        
   white-space:nowrap;
   letter-spacing:-.015em;
-  font-size:clamp(10px, 1.46cqw, 16.2px);  /* vw → cqw로 교체 */
+  font-size:clamp(10px, 1.46cqw, 16.2px);
 }
   
 /* ---------- Hero ---------- */
