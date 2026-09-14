@@ -42,12 +42,11 @@ body{
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .narrow{max-width:860px;margin:0 auto}
 #abstract .wrap.narrow{
-  max-width:1110px;
+  max-width:1800px;
   container-type:inline-size;
 }
 .absline{
-  display:block;           
-  text-align:center;        
+  display:block;
   white-space:nowrap;
   letter-spacing:-.015em;
   font-size:clamp(10px, 1.46cqw, 16.2px);
@@ -180,7 +179,7 @@ h4.rescat+p.body{margin-bottom:10px}
 .rescols p.body{font-size:14.5px}
 @media(max-width:900px){.rescols{grid-template-columns:1fr}.statgroups{grid-template-columns:1fr}}
 p.body{color:var(--ink-soft);margin-bottom:11px}
-#abstract p.body{text-align:center}
+#abstract p.body{text-align:left}
 p.body b{color:var(--ink)}
 .abline{white-space:nowrap;letter-spacing:-.015em;font-size:clamp(11px,1.52vw,16.5px)}
 .absline{white-space:nowrap;letter-spacing:-.015em;font-size:clamp(10px,1.12vw,16.2px)}
@@ -422,7 +421,6 @@ footer .logos{font-size:14.5px;font-weight:600;color:var(--ink-soft);margin-bott
   <div class="wrap narrow">
     <h2 class="sec">Abstract</h2>
     <p class="body"><span class="absline">We propose SnapPhysics, a training-free framework that reconstructs 3D objects and estimates their physical properties (mass, friction, and center of gravity)</span>from a single image, using a physics-aware scene graph as structured context for VLM-based reasoning. It improves scene-level F-Score by 18.6% on 3D-FRONT and reduces mass error (mALDE) by up to 20.5% over VLM-only estimation, enabling physically interactive MR without manual tuning.</p>
-
     <div class="statgroups">
       <div class="sgroup">
         <div class="sg-title">3D Reconstruction</div>
