@@ -45,18 +45,6 @@ body{
   max-width:1110px;
   container-type:inline-size;
 }
-.absline{
-  display:block;
-  white-space:nowrap;
-  letter-spacing:-.015em;
-  font-size:clamp(10px, 1.12vw, 16.2px);
-}
-.absrest{display:block;white-space:nowrap}
-@media(max-width:1300px){
-  .absline{white-space:normal}
-  .absrest{white-space:normal}
-}
-  
 /* ---------- Hero ---------- */
 header{
   padding:34px 0 20px;
@@ -125,8 +113,8 @@ h1 .brand{color:var(--accent)}
 .teaser-wrap .caption{max-width:none}
 .teaser-lead{
   font-family:'Source Serif 4',Georgia,serif;font-weight:700;
-  text-align:center;font-size:clamp(17px,2.1vw,22px);color:var(--ink);
-  max-width:940px;margin:0 auto 12px;line-height:1.5;letter-spacing:-.01em;
+  text-align:center;font-size:clamp(19px,2.2vw,25px);color:var(--ink);
+  max-width:1100px;margin:0 auto 12px;line-height:1.5;letter-spacing:-.01em;
 }
 .figure{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
@@ -184,8 +172,7 @@ h4.rescat+p.body{margin-bottom:10px}
 .rescols p.body{font-size:14.5px}
 @media(max-width:900px){.rescols{grid-template-columns:1fr}.statgroups{grid-template-columns:1fr}}
 p.body{color:var(--ink-soft);margin-bottom:11px}
-#abstract p.body{position:relative;left:50%;width:max-content;transform:translateX(-50%);text-align:left}
-@media(max-width:1300px){#abstract p.body{position:static;left:auto;width:auto;transform:none;text-align:center}}
+#abstract p.body{text-align:left}
 p.body b{color:var(--ink)}
 .abline{white-space:nowrap;letter-spacing:-.015em;font-size:clamp(11px,1.52vw,16.5px)}
 
@@ -425,7 +412,7 @@ footer .logos{font-size:14.5px;font-weight:600;color:var(--ink-soft);margin-bott
 <section id="abstract">
   <div class="wrap narrow">
     <h2 class="sec">Abstract</h2>
-    <p class="body"><span class="absline">We propose SnapPhysics, a training-free framework that reconstructs 3D objects and estimates their physical properties (mass, friction, and center of gravity)</span><span class="absrest">from a single image, using a physics-aware scene graph as structured context for VLM-based reasoning. It improves scene-level F-Score by 18.6%</span><span class="absrest">on 3D-FRONT and reduces mass error (mALDE) by up to 20.5% over VLM-only estimation, enabling physically interactive MR without manual tuning.</span></p>
+    <p class="body">Existing methods estimate physical properties from video at high computational cost or use vision-language models (VLMs) without geometric and relational context. SnapPhysics addresses these limitations by combining 3D reconstruction and spatial alignment with a physics-aware scene graph for VLM-based reasoning. It improves scene-level F-Score by 18.6% on 3D-FRONT and, on real scenes, reduces mass error by up to 20.5% and improves log-scale correlation by up to 19.6% over VLM-only estimation, enabling physically interactive MR without manual parameter tuning.</p>
     <div class="statgroups">
       <div class="sgroup">
         <div class="sg-title">3D Reconstruction</div>
