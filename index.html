@@ -432,6 +432,28 @@ footer .logos{font-size:14.5px;font-weight:600;color:var(--ink-soft);margin-bott
   </div>
 </section>
 
+<!-- ================= DEMOS ================= -->
+<section class="alt" id="demos">
+  <div class="wrap narrow">
+    <h2 class="sec">Interactive MR Demos</h2>
+    <div class="demo-tabs">
+      <button class="demo-tab active" id="tab-ar" onclick="setDemo('ar')">AR</button>
+      <button class="demo-tab" id="tab-vr" onclick="setDemo('vr')">VR</button>
+    </div>
+    <p class="demo-desc" id="demo-desc">Estimated mass, friction, and CoG drive physically plausible interactions overlaid on the real scene.</p>
+    <div class="video-shell">
+      <video id="demo-video" src="static/videos/ar_demo.mp4" autoplay muted loop playsinline></video>
+      <div class="vctrl">
+        <input type="range" id="vseek" min="0" max="1000" value="0" aria-label="Seek">
+        <button id="vplay" onclick="togglePlay()" aria-label="Play or pause">
+          <svg id="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="#fff"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          <svg id="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="#fff" hidden><path d="M8 5.5v13l11-6.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= METHOD ================= -->
 <section class="alt" id="method">
   <div class="wrap">
@@ -553,28 +575,6 @@ footer .logos{font-size:14.5px;font-weight:600;color:var(--ink-soft);margin-bott
       <tr><td>+SG</td><td class="cnd">arbitrary scale</td><td class="cnd">scene graph</td><td>282.2</td><td>0.542</td><td>0.887</td><td>0.917</td></tr>
       <tr class="ours"><td>Ours (Two-Stage)</td><td class="cnd">metric</td><td class="cnd">scene graph</td><td class="best">168.1</td><td>0.517</td><td>0.795</td><td class="best">0.959</td></tr>
       </tbody></table></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= DEMOS ================= -->
-<section class="alt" id="demos">
-  <div class="wrap narrow">
-    <h2 class="sec">Interactive MR Demos</h2>
-    <div class="demo-tabs">
-      <button class="demo-tab active" id="tab-ar" onclick="setDemo('ar')">AR</button>
-      <button class="demo-tab" id="tab-vr" onclick="setDemo('vr')">VR</button>
-    </div>
-    <p class="demo-desc" id="demo-desc">Estimated mass, friction, and CoG drive physically plausible interactions overlaid on the real scene.</p>
-    <div class="video-shell">
-      <video id="demo-video" src="static/videos/ar_demo.mp4" autoplay muted loop playsinline></video>
-      <div class="vctrl">
-        <input type="range" id="vseek" min="0" max="1000" value="0" aria-label="Seek">
-        <button id="vplay" onclick="togglePlay()" aria-label="Play or pause">
-          <svg id="ic-pause" viewBox="0 0 24 24" width="20" height="20" fill="#fff"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-          <svg id="ic-play" viewBox="0 0 24 24" width="20" height="20" fill="#fff" hidden><path d="M8 5.5v13l11-6.5z"/></svg>
-        </button>
-      </div>
     </div>
   </div>
 </section>
